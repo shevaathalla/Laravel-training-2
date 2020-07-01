@@ -12,9 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('master');
+    return view('items.index');
 });
 
-Route::get('data-tables', function () {
-    return view('table');
+Route::get('/data-tables', function () {
+    return view('items.table');
+});
+
+Route::get('/index', function () {
+    return view('items.index');
 });
